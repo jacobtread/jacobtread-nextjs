@@ -1,8 +1,9 @@
 import { FunctionComponent, useEffect, useState } from "react";
+import styles from "../styles/typer.module.scss"
 
 interface TyperProperties {
-    values: string[];
-    duration: number;
+    values: string[]; // The list of values to cycle through
+    duration: number; // The duration to display each value
 }
 
 /**
@@ -12,11 +13,10 @@ interface TyperProperties {
  *
  * @param values The string array of values to type out
  * @param duration The duration each value should stay for
- * @constructor
  */
 const Typer: FunctionComponent<TyperProperties> = ({values, duration}) => {
-    const [value, setValue] = useState("")
-    const [complete, setComplete] = useState(false)
+    const [value, setValue] = useState(""); // State for the current value
+    const [complete, setComplete] = useState(false); // State for whether typing is complete
 
     useEffect(() => {
         let deleting = false; // Determines whether the next update should delete a character
@@ -70,11 +70,13 @@ const Typer: FunctionComponent<TyperProperties> = ({values, duration}) => {
         executeUpdate() // Execute the initial update
 
         // Function for disposing of the timeout
-        return () => {clearTimeout(timeout)};
+        return () => {
+            clearTimeout(timeout)
+        };
     }, [duration, values])
 
     return (
-        <span className={"typer" + (complete ? "" : " typer--caret")}>
+        <span className={styles.typer} data-typing={!complete}>
             {value}
         </span>
     )

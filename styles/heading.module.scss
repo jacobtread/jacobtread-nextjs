@@ -1,0 +1,78 @@
+.heading {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+
+  background-size: cover;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: url("../public/background.png") center no-repeat;
+  background-size: cover;
+
+}
+
+.content {
+
+  &__wrapper {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 2.5rem;
+
+    width: 100%;
+    max-width: 1400px;
+  }
+
+
+  &__image {
+
+  }
+
+  &__name {
+    color: white;
+    font-size: 5rem;
+    font-weight: 500;
+  }
+
+  &__role {
+    color: #7ed380;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+
+    &__suffix {
+      margin-left: 0.5rem;
+      color: #a7a7a7;
+      font-weight: normal;
+    }
+  }
+}
+
+.nav {
+
+  display: flex;
+  flex-flow: column;
+
+  &__button {
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem;
+    background: #222;
+    border-right: 5px solid #333;
+    transition:  opacity 0.5s ease, border-right-color 0.25s, background-color 0.2s ease;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+      border-right-color: #518752;
+      background-color: #518752;
+    }
+  }
+}
