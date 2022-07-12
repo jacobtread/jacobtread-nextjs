@@ -8,12 +8,6 @@ const Heading: FC = () => {
     return (
         <div className={styles.heading}>
             <div className={styles.content__wrapper}>
-                <nav className={styles.nav}>
-                    <a href="" className={styles.nav__button}>About</a>
-                    <a href="" className={styles.nav__button}>Contact</a>
-                    <a href="" className={styles.nav__button}>Projects</a>
-                    <a href="" className={styles.nav__button}>Technology</a>
-                </nav>
                 <div className={styles.content}>
                     <Image src={JacobRead} alt="JR" className={styles.content__image}/>
                     <div>
@@ -27,6 +21,13 @@ const Heading: FC = () => {
                         </p>
                     </div>
                 </div>
+                <nav className={styles.nav}>
+                    <a href="" className={styles.nav__button}>Home</a>
+                    <a href="" className={styles.nav__button}>About</a>
+                    <a href="" className={styles.nav__button}>Contact</a>
+                    <a href="" className={styles.nav__button}>Projects</a>
+                    <a href="" className={styles.nav__button}>Technology</a>
+                </nav>
             </div>
         </div>
     )

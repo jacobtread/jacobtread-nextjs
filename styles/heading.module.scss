@@ -20,10 +20,10 @@
 
   &__wrapper {
     display: flex;
-    flex-flow: row;
-    align-items: center;
+    flex-flow: column;
     gap: 2.5rem;
 
+    padding: 0 5rem;
     width: 100%;
     max-width: 1400px;
   }
@@ -56,23 +56,49 @@
 .nav {
 
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
+  justify-content: left;
+  gap: 1rem;
 
   &__button {
+    position: relative;
+    border-radius: 1rem;
     font-size: 1.2rem;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
     padding: 1rem;
-    background: #222;
-    border-right: 5px solid #333;
-    transition:  opacity 0.5s ease, border-right-color 0.25s, background-color 0.2s ease;
+
+    z-index: 0;
+
     opacity: 0.5;
+    transition: opacity 0.5s ease;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+
+      transform: skewX(-15deg) scale(1);
+      background: #222;
+      border-bottom: 5px solid #333;
+
+      transition: border-bottom-color 0.25s, background-color 0.2s ease, transform 0.25s ease;
+      z-index: -1;
+    }
 
     &:hover {
       opacity: 1;
-      border-right-color: #518752;
-      background-color: #518752;
+
+      &::after {
+        transform: skewX(-15deg) scale(1.1);
+        background-color: #518752;
+        border-bottom-color: #6ab56c;
+      }
     }
+
   }
 }
