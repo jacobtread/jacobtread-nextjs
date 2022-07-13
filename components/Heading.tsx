@@ -1,10 +1,11 @@
-import { FC } from "react";
+import { FunctionComponent } from "react";
 import styles from "../styles/heading.module.scss"
 import Typer from "./Typer";
 import Image from "next/image";
 import JacobRead from "../public/jacobread.png"
 
-const Heading: FC = () => {
+
+const Heading: FunctionComponent = () => {
     return (
         <div className={styles.heading}>
             <div className={styles.content__wrapper}>
@@ -22,11 +23,10 @@ const Heading: FC = () => {
                     </div>
                 </div>
                 <nav className={styles.nav}>
-                    <a href="" className={styles.nav__button}>Home</a>
                     <a href="" className={styles.nav__button}>About</a>
                     <a href="" className={styles.nav__button}>Contact</a>
-                    <a href="" className={styles.nav__button}>Projects</a>
                     <a href="" className={styles.nav__button}>Technology</a>
+                    <a href="" className={styles.nav__button}>Projects</a>
                 </nav>
             </div>
         </div>
