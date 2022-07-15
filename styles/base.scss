@@ -1,0 +1,223 @@
+@import "scheme";
+@import "tools";
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth; // Enables smooth scrolling to elements
+}
+
+body {
+  background: $background;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1200px; // Enforce a maximum width of 1200px for the content
+  margin: 0 auto; // Center the content using margins
+  padding-top: 5rem; // Padding to separate the content from the heading
+}
+
+.icon {
+  vertical-align: center;
+  max-width: 32px;
+}
+
+// region Section classes
+
+.section {
+
+}
+
+.section__title {
+  // Horizontal padding makes it easier for content to
+  // wrap in a way that looks correct
+  padding: 0 2rem;
+
+  position: relative; // Relative positioning for the line with absolute positioning
+
+  font-size: 2.5rem; // 2.5x larger than the root font size
+  font-weight: 400; // Lighter font weight to compensate for larger size
+
+  color: white; // White font to draw the eye more than other elements
+
+  text-align: center; // Align the text to center
+}
+
+.section__content {
+  padding: 2rem;
+  border-radius: 8px;
+  border: 5px dashed $background-light;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  display: grid; // Apply a grid layout to the blocks
+  gap: 2rem; // Apply a gap of 2rem between each element
+}
+
+.section__content--col-2 {
+  grid-template-columns: 1fr 1fr; // Automatically create two columns
+}
+
+// endregion
+
+// region Block classes
+
+.block {
+  position: relative;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.5s ease;
+  background: $background-light;
+}
+
+
+.block::before {
+  @include pseudo-content;
+
+  top: unset;
+  bottom: 0;
+
+  width: 100%;
+
+  transition: transform 0.5s ease;
+  transform: scaleX(0);
+  background-color: $primary-dark;
+
+  height: 5px;
+  border-radius: 5px;
+}
+
+.block:hover {
+  // Transform the card to look as though its tilted upwards
+  transform: perspective(600px) rotateX(5deg);
+  background-color: lighten($background-light, 5);
+
+  &::before {
+    transform: scaleX(1);
+  }
+}
+
+.block__title {
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1.5rem;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.block__text {
+  color: #AAA;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.block__buttons {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.block:hover .block__button:not(:hover) {
+  background-color: $background-lightest;
+}
+
+.block__button {
+  text-decoration: none;
+
+  padding: 1rem;
+  background-color: $background-lighter;
+  color: #999;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $primary-dark;
+    color: white;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scaleX(0.9);
+  }
+}
+
+/*
+  Styling attribute for block class which allows the
+  block to span across two rows rather than just one
+*/
+.block--col-2-span {
+  // Span from columns 1 through til 3 (two columns)
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+// endregion
+
+// region Responsive styling
+
+/*
+  1000px is where the two columns begin to be too large
+  to fit on the screen at the same time without causing
+  clutter so at this point the columns are turned into 1
+*/
+@media all and (max-width: 1000px) {
+
+  .section__content--col-2 {
+    grid-template-columns: 1fr; // Set the column template to one column
+  }
+
+  .block--col-2-span {
+    grid-column: 1; // Revert the spanning column to just one column
+  }
+
+}
+
+/*
+  At 500px we begin to get more into smaller device territory.
+  at this width the current enlarged font sizes can appear too
+  large on mobile devices so this is decreased the padding on
+  the blocks is also decreased for more room. The block texts
+  are aligned to center to better fit the mobile reading flow
+*/
+@media all and (max-width: 500px) {
+
+  .section__title {
+    font-size: 1.7rem;
+  }
+
+  .block__title {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .block__text {
+    font-size: 1.15rem;
+    text-align: center;
+  }
+
+  .block {
+    padding: 1rem; // Decrease the padding for more space
+  }
+
+  .block__buttons {
+    justify-content: center;
+  }
+}
+
+// endregion

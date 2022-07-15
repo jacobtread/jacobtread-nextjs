@@ -1,0 +1,21 @@
+.contact-button {
+  padding: 1rem;
+  display: flex;
+  flex-flow: row;
+  gap: 1.5rem;
+}
+
+.contact-button__icon {
+  max-width: 42px;
+}
+
+.contact-button .block__title {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0;
+}
+
+.contact-button .block__text {
+  font-weight: normal;
+  font-size: 1.2rem;
+}
