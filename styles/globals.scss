@@ -51,8 +51,17 @@ a {
   padding: 2rem;
   border-radius: 8px;
   border: 5px dashed $background-light;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  display: grid; // Apply a grid layout to the blocks
+  gap: 2rem; // Apply a gap of 2rem between each element
 }
 
+.section__content--col-2 {
+  grid-template-columns: 1fr 1fr; // Automatically create two columns
+}
 
 .block {
   position: relative;
@@ -88,8 +97,6 @@ a {
     transform: scaleX(1);
   }
 }
-
-
 
 .block__title {
   margin-bottom: 1rem;
@@ -137,18 +144,6 @@ a {
   &:active {
     transform: scaleX(0.9);
   }
-}
-
-.blocks {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-
-  display: grid; // Apply a grid layout to the blocks
-  gap: 2rem; // Apply a gap of 2rem between each element
-}
-
-.blocks--col-2 {
-  grid-template-columns: 1fr 1fr; // Automatically create two columns
 }
 
 /*

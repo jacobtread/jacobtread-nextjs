@@ -7,7 +7,7 @@ const About: FunctionComponent = () => {
         <div className="section">
             <h1 className="section__title">Getting to know me</h1>
             <Dots/>
-            <div className="section__content blocks blocks--col-2" id="about">
+            <div className="section__content section__content--col-2" id="about">
                 <div className="block" data-block="history">
                     <h2 className="block__title">
                         History
