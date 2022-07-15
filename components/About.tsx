@@ -1,11 +1,14 @@
 import { FunctionComponent } from "react";
 import styles from "../styles/about.module.scss"
+import Dots from "../components/Dots";
+
 
 const About: FunctionComponent = () => {
     return (
-        <div id={"about"} className={styles.about}>
-            <h1 className={styles.title}>Getting to know me...</h1>
-            <div className={styles.blocks}>
+        <div id="about" className={styles.about}>
+            <h1 className={styles.about__title}>Getting to know me...</h1>
+            <Dots/>
+            <div className={styles.about__blocks}>
                 <div className={styles.block} data-block="history">
                     <h2 className={styles.block__title}>
                         History
@@ -29,7 +32,7 @@ const About: FunctionComponent = () => {
                         interested in body building and I like to keep a strict routine with my exercise.
                     </p>
                 </div>
-                <div className={styles.block + " " + styles['block--span']} data-block="projects">
+                <div className={`${styles.block} ${styles['block--span']}`} data-block="projects">
                     <h2 className={styles.block__title}>
                         Projects
                     </h2>
@@ -40,8 +43,8 @@ const About: FunctionComponent = () => {
                         look around and see if any of them spark your interests
                     </p>
                 </div>
-
             </div>
+            <Dots/>
         </div>
     )
 }

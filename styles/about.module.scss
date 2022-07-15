@@ -1,112 +1,93 @@
 @import "scheme";
 @import "tools";
 
+/*
+  Styling for the root outermost element that wraps the about
+  page content
+*/
 .about {
-
+  padding-top: 5rem;
 }
 
-.title {
-  position: relative;
+/*
+  Styling for the about title "Getting to know me..." this
+  includes the line drawn underneath it
+*/
+.about__title {
+  position: relative; // Relative positioning for the line with absolute positioning
 
-  padding: 2rem;
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: white;
-  text-align: center;
-  max-width: 700px;
-  margin: 2rem auto;
+  font-size: 2.5rem; // 2.5x larger than the root font size
+  font-weight: 400; // Lighter font weight to compensate for larger size
 
-  /*
-    Pseudo after element for the title element is used to
-    display an underline in the primary color
-  */
-  &::after {
-    @include pseudo-content; // Apply the default pseudo styles
+  color: white; // White font to draw the eye more than other elements
 
-    top: unset; // Resetting the top offset from pseudo content
-    bottom: 5px; // Offset the line 5px from the bottom
-
-    left: 50%; // Position the element half way along the parent
-    transform: translateX(-50%) scale(1); // Translate it left by half the element width to center it
-
-    max-width: 300px; // Ensure the line isn't longer than 300px
-    height: 5px; // Make the line 5px in height
-
-    background-color: $primary; // Use the primary colour
-  }
+  text-align: center; // Align the text to center
 }
 
+.about__blocks {
+  margin: 2rem 0; // Vertical margin to space the surrounding elements away
 
-.blocks {
-  padding: 2rem 0;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-
-  max-width: 1200px;
-  margin: 0 auto;
+  display: grid; // Apply a grid layout to the blocks
+  grid-template-columns: 1fr 1fr; // Automatically create two columns
+  gap: 2rem; // Apply a gap of 2rem between each element
 }
 
 .block {
   position: relative;
   border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.5s ease;
+  background: $background-light;
+}
 
-  &--span {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
+.block::before {
+  @include pseudo-content;
+
+  top: unset;
+  bottom: 0;
+
+  width: 100%;
+
+  transition: transform 0.5s ease;
+  transform: scaleX(0);
+  background-color: $primary-dark;
+
+  height: 5px;
+  border-radius: 5px;
+}
+
+.block:hover {
+  // Transform the card to look as though its tilted upwards
+  transform: perspective(600px) rotateX(5deg);
+  background-color: $background-light-2;
 
   &::before {
-    @include pseudo-content;
-
-    top: unset;
-    bottom: 0;
-
-    width: 100%;
-
-    transition: transform 0.5s ease;
-    transform: scaleX(0);
-    background-color: $primary-dark;
-
-    height: 5px;
-    border-radius: 5px;
+    transform: scaleX(1);
   }
+}
 
+.block__title {
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1.5rem;
 
-  padding: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
 
-  transition: all 0.5s ease;
+.block__text {
+  color: #AAA;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
 
-  background: $background-light;
-
-  &:hover {
-    // Transform the card to look as though its tilted upwards
-    transform: perspective(600px) rotateX(5deg);
-    background-color: $background-light-2;
-
-    &::before {
-      transform: scaleX(1);
-    }
-  }
-
-
-  &__title {
-    margin-bottom: 1rem;
-    color: white;
-    font-size: 1.5rem;
-
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-
-  }
-
-  &__text {
-    color: #AAA;
-    font-size: 1.25rem;
-    line-height: 1.6;
-
-    transition: color 0.5s ease;
-  }
+/*
+  Styling attribute for block class which allows the
+  block to span across two rows rather than just one
+*/
+.block--span {
+  // Span from columns 1 through til 3 (two columns)
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
