@@ -19,18 +19,16 @@
 
 }
 
-.heading__content {
-
-}
-
 .heading__content-wrapper {
   display: flex;
   flex-flow: column;
   gap: 2.5rem;
 
   padding: 0 5rem;
-  width: 100%;
-  max-width: 1400px;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .heading__content__role {
@@ -52,8 +50,9 @@
 
   display: flex;
   flex-flow: row wrap;
-  justify-content: left;
   gap: 1rem;
+  justify-content: center;
+
 }
 
 .heading__nav__button {
