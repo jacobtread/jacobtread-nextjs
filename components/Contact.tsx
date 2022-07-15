@@ -7,7 +7,11 @@ const Contact: FunctionComponent = () => {
         <div className="section">
             <h1 className="section__title">Getting in touch</h1>
             <Dots/>
-            <div id="contact" className={"section__content"}></div>
+            <div id="contact" className={"section__content"}>
+                <div>
+
+                </div>
+            </div>
         </div>
     )
 }
