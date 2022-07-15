@@ -1,3 +1,6 @@
+@import "scheme";
+@import "tools";
+
 .heading {
   position: relative;
 
@@ -11,7 +14,7 @@
   align-items: center;
   justify-content: center;
 
-  background: url("../public/background-2.png") center no-repeat;
+  background: url("../public/background.jpg") center no-repeat;
   background-size: cover;
 
 }
@@ -28,11 +31,6 @@
     max-width: 1400px;
   }
 
-
-  &__image {
-
-  }
-
   &__name {
     color: white;
     font-size: 5rem;
@@ -40,7 +38,7 @@
   }
 
   &__role {
-    color: #7ed380;
+    color: $primary;
     font-weight: bold;
     font-size: 1.5rem;
     margin-top: 0.5rem;
@@ -75,19 +73,11 @@
     transition: opacity 0.5s ease;
 
     &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
+      @include pseudo-angle-background;
 
-      transform: skewX(-15deg) scale(1);
-      background: #222;
-      border-bottom: 5px solid #333;
-
+      background: $background-light;
+      border-bottom: 5px solid $background-lighter;
       transition: border-bottom-color 0.25s, background-color 0.2s ease, transform 0.25s ease;
-      z-index: -1;
     }
 
     &:hover {
@@ -95,8 +85,8 @@
 
       &::after {
         transform: skewX(-15deg) scale(1.1);
-        background-color: #518752;
-        border-bottom-color: #6ab56c;
+        background-color: $primary-dark;
+        border-bottom-color: lighten($primary-dark, 5);
       }
     }
 

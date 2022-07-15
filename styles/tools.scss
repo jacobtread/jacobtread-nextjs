@@ -1,0 +1,34 @@
+/*
+  Mixin to be applied to the ::before or ::after
+  pseudo tags in order to make them take up the
+  same space as the original element and make
+  them real elements using content.
+
+  Elements this is applied to must have position
+  set to relative
+
+  position: relative;
+*/
+@mixin pseudo-content {
+  // Give the element content so it exists
+  content: '';
+
+  // Absolute positioning
+  position: absolute;
+
+  // Position to top left corner
+  left: 0;
+  top: 0;
+
+  // Span entire element width and height
+  width: 100%;
+  height: 100%;
+
+}
+
+@mixin pseudo-angle-background {
+  @include pseudo-content;
+
+  transform: skewX(-15deg) scale(1);
+  z-index: -1;
+}
