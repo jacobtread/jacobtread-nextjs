@@ -24,7 +24,7 @@ const Heading: FunctionComponent = () => {
                 </div>
                 <nav className={styles.nav}>
                     <a href="#about" className={styles.nav__button}>About</a>
-                    <a href="" className={styles.nav__button}>Contact</a>
+                    <a href="#contact" className={styles.nav__button}>Contact</a>
                     <a href="" className={styles.nav__button}>Technology</a>
                     <a href="" className={styles.nav__button}>Projects</a>
                 </nav>

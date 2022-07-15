@@ -1,36 +1,7 @@
 @import "scheme";
 @import "tools";
 
-/*
-  Styling for the root outermost element that wraps the about
-  page content
-*/
-.about {
-  /*
-    Large padding on the top to separate from heading
-    and small side paddings to space from window edges
-    and cause wrapping on smaller screens
-  */
-  padding: 5rem 2rem 0;
-}
-
-/*
-  Styling for the about title "Getting to know me..." this
-  includes the line drawn underneath it
-*/
-.about__title {
-  position: relative; // Relative positioning for the line with absolute positioning
-
-  font-size: 2.5rem; // 2.5x larger than the root font size
-  font-weight: 400; // Lighter font weight to compensate for larger size
-
-  color: white; // White font to draw the eye more than other elements
-
-  text-align: center; // Align the text to center
-}
-
-.about__blocks {
-
+.blocks {
   margin-top: 2rem;
   margin-bottom: 2rem;
 

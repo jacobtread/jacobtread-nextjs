@@ -5,10 +5,10 @@ import Dots from "../components/Dots";
 
 const About: FunctionComponent = () => {
     return (
-        <div id="about" className={styles.about}>
-            <h1 className={styles.about__title}>Getting to know me...</h1>
+        <div className={`section ${styles.about}`}>
+            <h1 className="section__title">Getting to know me</h1>
             <Dots/>
-            <div className={styles.about__blocks}>
+            <div className={`section__content ${styles.blocks}`} id="about">
                 <div className={styles.block} data-block="history">
                     <h2 className={styles.block__title}>
                         History

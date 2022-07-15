@@ -3,7 +3,7 @@
 html, body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; // Enables smooth scrolling to elements
 }
 
 body {
@@ -22,6 +22,33 @@ a {
 }
 
 .main {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1200px; // Enforce a maximum width of 1200px for the content
+  margin: 0 auto; // Center the content using margins
+  padding-top: 5rem; // Padding to separate the content from the heading
 }
+
+.section {
+
+}
+
+.section__title {
+  // Horizontal padding makes it easier for content to
+  // wrap in a way that looks correct
+  padding: 0 2rem;
+
+  position: relative; // Relative positioning for the line with absolute positioning
+
+  font-size: 2.5rem; // 2.5x larger than the root font size
+  font-weight: 400; // Lighter font weight to compensate for larger size
+
+  color: white; // White font to draw the eye more than other elements
+
+  text-align: center; // Align the text to center
+}
+
+.section__content {
+  padding: 2rem;
+  border-radius: 8px;
+  border: 5px dashed $background-light;
+}
+
