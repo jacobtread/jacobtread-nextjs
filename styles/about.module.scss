@@ -6,7 +6,12 @@
   page content
 */
 .about {
-  padding-top: 5rem;
+  /*
+    Large padding on the top to separate from heading
+    and small side paddings to space from window edges
+    and cause wrapping on smaller screens
+  */
+  padding: 5rem 2rem 0;
 }
 
 /*
@@ -25,7 +30,9 @@
 }
 
 .about__blocks {
-  margin: 2rem 0; // Vertical margin to space the surrounding elements away
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
   display: grid; // Apply a grid layout to the blocks
   grid-template-columns: 1fr 1fr; // Automatically create two columns
@@ -90,4 +97,50 @@
   // Span from columns 1 through til 3 (two columns)
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+
+/*
+  1000px is where the two columns begin to be too large
+  to fit on the screen at the same time without causing
+  clutter so at this point the columns are turned into 1
+*/
+@media all and (max-width: 1000px) {
+
+  .about__blocks {
+    grid-template-columns: 1fr; // Set the column template to one column
+  }
+
+  .block--span {
+    grid-column: 1; // Revert the spanning column to just one column
+  }
+
+}
+
+/*
+  At 500px we begin to get more into smaller device territory.
+  at this width the current enlarged font sizes can appear too
+  large on mobile devices so this is decreased the padding on
+  the blocks is also decreased for more room. The block texts
+  are aligned to center to better fit the mobile reading flow
+*/
+@media all and (max-width: 500px) {
+
+  .about__title {
+    font-size: 1.7rem;
+  }
+
+  .block__title {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .block__text {
+    font-size: 1.15rem;
+    text-align: center;
+  }
+
+  .block {
+    padding: 1rem; // Decrease the padding for more space
+  }
 }
