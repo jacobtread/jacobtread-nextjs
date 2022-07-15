@@ -23,7 +23,7 @@ const Heading: FunctionComponent = () => {
                     </div>
                 </div>
                 <nav className={styles.nav}>
-                    <a href="" className={styles.nav__button}>About</a>
+                    <a href="#about" className={styles.nav__button}>About</a>
                     <a href="" className={styles.nav__button}>Contact</a>
                     <a href="" className={styles.nav__button}>Technology</a>
                     <a href="" className={styles.nav__button}>Projects</a>
