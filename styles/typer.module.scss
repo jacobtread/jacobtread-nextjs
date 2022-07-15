@@ -2,7 +2,7 @@
   position: relative;
   margin-right: 4px;
 
-  &[data-typing=true]:after {
+  .typer[data-typing=true]::after {
     content: "";
     position: absolute;
     right: -4px;
