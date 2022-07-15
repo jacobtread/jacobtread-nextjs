@@ -34,6 +34,8 @@ a {
   padding-top: 5rem; // Padding to separate the content from the heading
 }
 
+// region Section classes
+
 .section {
 
 }
@@ -68,6 +70,10 @@ a {
 .section__content--col-2 {
   grid-template-columns: 1fr 1fr; // Automatically create two columns
 }
+
+// endregion
+
+// region Block classes
 
 .block {
   position: relative;
@@ -162,6 +168,9 @@ a {
   grid-column-end: 3;
 }
 
+// endregion
+
+// region Responsive styling
 
 /*
   1000px is where the two columns begin to be too large
@@ -211,3 +220,5 @@ a {
     justify-content: center;
   }
 }
+
+// endregion

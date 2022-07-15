@@ -46,6 +46,8 @@
   font-weight: normal;
 }
 
+// region Navigation link styling
+
 .heading__nav {
 
   display: flex;
@@ -86,3 +88,5 @@
   background-color: $primary-dark;
   border-bottom-color: lighten($primary-dark, 5);
 }
+
+// endregion
