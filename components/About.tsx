@@ -42,6 +42,19 @@ const About: FunctionComponent = () => {
                         all kinds of varieties in all different kinds of languages and frameworks. Feel free to take a
                         look around and see if any of them spark your interests
                     </p>
+                    <div className={styles.block__buttons}>
+                        <a href="/projects" className={styles.block__button}>
+                            View Projects
+                        </a>
+
+                        <a
+                            href="https://github.com/jacobtread"
+                            rel="noreferrer nooppener"
+                            target="_blank"
+                            className={styles.block__button}>
+                            View GitHub
+                        </a>
+                    </div>
                 </div>
             </div>
             <Dots/>
