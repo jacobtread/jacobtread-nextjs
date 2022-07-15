@@ -1,5 +1,4 @@
 import { FunctionComponent, useEffect, useState } from "react";
-import styles from "../styles/typer.module.scss"
 
 interface TyperProperties {
     values: string[]; // The list of values to cycle through
@@ -76,7 +75,7 @@ const Typer: FunctionComponent<TyperProperties> = ({values, duration}) => {
     }, [duration, values])
 
     return (
-        <span className={styles.typer} data-typing={!complete}>
+        <span className="typer" data-typing={!complete}>
             {value}
         </span>
     )

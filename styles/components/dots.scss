@@ -1,5 +1,5 @@
-@import "scheme";
-@import "tools";
+@import "styles/scheme";
+@import "styles/tools";
 
 .dots {
   display: grid;
@@ -15,7 +15,7 @@
   padding: 2rem 0;
 }
 
-.dot {
+.dots__item {
   width: 12px;
   height: 12px;
   border-radius: 24px;

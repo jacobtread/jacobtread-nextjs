@@ -1,0 +1,88 @@
+@import "styles/scheme";
+@import "styles/tools";
+
+.heading {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+
+  background-size: cover;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: url("../../public/background.jpg") center no-repeat;
+  background-size: cover;
+
+}
+
+.heading__content {
+
+}
+
+.heading__content-wrapper {
+  display: flex;
+  flex-flow: column;
+  gap: 2.5rem;
+
+  padding: 0 5rem;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.heading__content__role {
+  color: $primary;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.heading__content__role__suffix {
+  margin-left: 0.5rem;
+  color: #a7a7a7;
+  font-weight: normal;
+}
+
+.heading__nav {
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.heading__nav__button {
+  position: relative;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem;
+
+  z-index: 0;
+
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
+
+.heading__nav__button::after {
+  @include pseudo-angle-background;
+
+  background: $background-light;
+  border-bottom: 5px solid $background-lighter;
+  transition: border-bottom-color 0.25s, background-color 0.2s ease, transform 0.25s ease;
+}
+
+.heading__nav__button:hover {
+  opacity: 1;
+}
+
+.heading__nav__button:hover::after {
+  transform: skewX(-15deg) scale(1.1);
+  background-color: $primary-dark;
+  border-bottom-color: lighten($primary-dark, 5);
+}

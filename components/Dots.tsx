@@ -1,14 +1,11 @@
 import { FunctionComponent } from "react";
-import styles from "../styles/dots.module.scss"
 
-const Dots: FunctionComponent = () => {
-    return (
-        <div className={styles.dots}>
-            <span className={styles.dot}></span>
-            <span className={styles.dot}></span>
-            <span className={styles.dot}></span>
-        </div>
-    )
-}
+const Dots: FunctionComponent = () => (
+    <div className="dots">
+        <span className="dots__item"></span>
+        <span className="dots__item"></span>
+        <span className="dots__item"></span>
+    </div>
+)
 
 export default Dots
