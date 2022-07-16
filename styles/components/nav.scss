@@ -1,0 +1,66 @@
+@import "styles/scheme";
+
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  justify-content: center;
+
+  transition: gap 0.5s ease;
+}
+
+.nav--floating {
+  flex-flow: row;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  gap: 0;
+  z-index: 10;
+  backdrop-filter: blur(2px);
+
+  .nav__button {
+    opacity: 0.8;
+    border-radius: 0;
+  }
+}
+
+.nav__button {
+  position: relative;
+  font-size: 1.2rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.5;
+  background: $background-light;
+  border-bottom: 5px solid $background-lighter;
+  transition: opacity 0.5s ease, border-bottom-color 0.25s, background-color 0.2s ease, transform 0.25s ease;
+  border-radius: 8px;
+  transform: scale(1);
+}
+
+.nav__button:hover {
+  opacity: 1;
+  background-color: $primary-dark;
+  border-bottom-color: lighten($primary-dark, 15);
+  transform: scale(1.05);
+}
+
+.nav__button:active {
+  transform: scaleX(0.9);
+}
+
+@media all and (max-width: 800px) {
+
+  .nav--floating {
+    position: relative;
+    left: unset;
+    top: unset;
+    transform: unset;
+    gap: 1rem;
+    z-index: initial;
+    flex-flow: row wrap;
+  }
+
+}
