@@ -23,6 +23,14 @@
     opacity: 0.8;
     border-radius: 0;
   }
+
+  .nav__button:hover {
+    transform: scale(1);
+  }
+
+  .nav__button:active {
+    transform: translateY(-15px) scale(1);
+  }
 }
 
 .nav__button {
@@ -45,6 +53,7 @@
   background-color: $primary-dark;
   border-bottom-color: lighten($primary-dark, 15);
   transform: scale(1.05);
+  z-index: 1;
 }
 
 .nav__button:active {
