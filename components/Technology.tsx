@@ -14,9 +14,11 @@ const Technology: FunctionComponent = () => (
         <Dots/>
         <div className="section__content technology" id="technology">
 
-            <div className="technology__block">
-                <Image src={LangBImage} alt="Backend Languages" className="technology__block__image"/>
-                <div className="block">
+            <div className="block technology__block">
+                <div className="technology__block__image">
+                    <Image src={LangBImage} alt="Backend Languages"/>
+                </div>
+                <div>
                     <h2 className="block__title">Backend Languages</h2>
                     <p className="block__text">
                         I am very familiar with languages such as Java and Kotlin having roughly 5 years experience
@@ -27,9 +29,11 @@ const Technology: FunctionComponent = () => (
             </div>
 
 
-            <div className="technology__block">
-                <Image src={LangFImage} alt="Frontend Languages" className="technology__block__image"/>
-                <div className="block">
+            <div className="block technology__block">
+                <div className="technology__block__image">
+                    <Image src={LangFImage} alt="Frontend Languages"/>
+                </div>
+                <div>
                     <h2 className="block__title">Frontend Languages</h2>
                     <p className="block__text">
                         I am very well accustomed to popular frontend languages like Javascript and Typescript with
@@ -39,9 +43,11 @@ const Technology: FunctionComponent = () => (
                 </div>
             </div>
 
-            <div className="technology__block">
-                <Image src={EditorsImage} alt="Editors" className="technology__block__image"/>
-                <div className="block">
+            <div className="block technology__block">
+                <div className="technology__block__image">
+                    <Image src={EditorsImage} alt="Editors"/>
+                </div>
+                <div>
                     <h2 className="block__title">IDE & Editors</h2>
                     <p className="block__text">
                         When it comes to IDE’s my platform of choice is the JetBrains collection of IDE’s i’ve grown
@@ -52,23 +58,30 @@ const Technology: FunctionComponent = () => (
             </div>
 
 
-            <div className="technology__block">
-                <Image src={FrameBImage} alt="Backend Frameworks" className="technology__block__image"/>
-                <div className="block">
+            <div className="block technology__block">
+                <div className="technology__block__image">
+                    <Image src={FrameBImage} alt="Backend Frameworks"/>
+                </div>
+                <div>
                     <h2 className="block__title">Backend Frameworks & Tooling</h2>
                     <p className="block__text">
-                        I am very familiar with the Laravel php framework having shipped multiple production projects
-                        using it in the past. NuxtJS was the framework which I previously developed my personal website
-                        in among other side projects. I have used NodeJS to make bots as well as other usefull tools and
+                        I am very familiar with the Laravel php framework having shipped multiple production
+                        projects
+                        using it in the past. NuxtJS was the framework which I previously developed my personal
+                        website
+                        in among other side projects. I have used NodeJS to make bots as well as other usefull tools
+                        and
                         full on server systems.
                     </p>
                 </div>
             </div>
 
 
-            <div className="technology__block">
-                <Image src={FrameFImage} alt="Frontend Frameworks" className="technology__block__image"/>
-                <div className="block">
+            <div className="block technology__block">
+                <div className="technology__block__image">
+                    <Image src={FrameFImage} alt="Frontend Frameworks"/>
+                </div>
+                <div>
                     <h2 className="block__title">Frontend Frameworks & Tooling</h2>
                     <p className="block__text">
                         I am quite familiar with a number of front-end frameworks my favorite of which is VueJS. I have
@@ -77,8 +90,6 @@ const Technology: FunctionComponent = () => (
                     </p>
                 </div>
             </div>
-
-
         </div>
     </div>
 )
