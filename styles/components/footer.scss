@@ -1,0 +1,43 @@
+@import "styles/scheme";
+
+.footer {
+
+}
+
+.footer-wrapper {
+
+  max-width: 1200px;
+  margin: 15vh auto 0;
+  padding: 2rem 4rem;
+  color: white;
+  border: 5px dashed darken($background-light, 3);
+
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.footer__initials {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer__email {
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+
+.footer__copyright {
+  color: #777;
+}
+
+.footer__links {
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.footer__links__item {
+  color: #666;
+  text-decoration: underline;
+}

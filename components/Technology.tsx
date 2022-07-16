@@ -91,7 +91,6 @@ const Technology: FunctionComponent = () => (
                 </div>
             </div>
         </div>
-        <Dots/>
     </div>
 )
 

@@ -6,7 +6,7 @@
   gap: 1rem;
   justify-content: center;
 
-  transition: gap 0.5s ease;
+  transition: gap 0.2s ease;
 }
 
 .nav--floating {
@@ -17,11 +17,18 @@
   transform: translateX(-50%);
   gap: 0;
   z-index: 10;
-  backdrop-filter: blur(2px);
 
   .nav__button {
-    opacity: 0.8;
     border-radius: 0;
+
+    &:first-child {
+      border-bottom-left-radius: 8px;
+    }
+
+    &:last-child {
+      border-bottom-right-radius: 8px;
+    }
+
   }
 
   .nav__button:hover {
