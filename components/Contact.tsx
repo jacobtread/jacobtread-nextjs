@@ -30,6 +30,7 @@ const Contact: FunctionComponent = () => {
                 <ContactButton Icon={MailIcon} title="Email" link="mailto:jacobtread@gmail.com" text="jacobtread@gmail.com"/>
                 <ContactButton Icon={DiscordIcon} title="Discord" link="#contact" text="Jacobtread#3770"/>
             </div>
+            <Dots/>
         </div>
     )
 }

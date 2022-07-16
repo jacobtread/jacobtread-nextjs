@@ -1,0 +1,23 @@
+.technology {
+
+}
+
+.technology__block {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+
+  &:nth-child(even) {
+    flex-flow: row-reverse;
+  }
+
+}
+
+.technology__block__image {
+  justify-self: center;
+  align-items: center;
+  width: 300px;
+}
