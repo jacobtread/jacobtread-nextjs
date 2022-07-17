@@ -1,0 +1,60 @@
+@import "styles/scheme";
+
+.projects__title {
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}
+
+.project {
+  align-self: stretch;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project:first-child {
+  width: 100%;
+}
+
+.project__head {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.project__icon {
+  max-height: 32px;
+  display: inline;
+  float: right;
+  margin-right: 1rem;
+  opacity: 0.5;
+}
+
+.project__title {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.project__text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.project .block__button {
+  font-size: 1rem;
+}
+
+.project .block__button .block__button__icon {
+  width: 24px;
+}
+@media all and (max-width: 500px) {
+  .project__title {
+    margin-bottom: 0;
+  }
+}

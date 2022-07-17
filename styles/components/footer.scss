@@ -1,7 +1,8 @@
 @import "styles/scheme";
 
 .footer {
-
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .footer-wrapper {

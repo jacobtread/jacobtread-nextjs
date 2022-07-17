@@ -70,6 +70,18 @@ a {
   grid-template-columns: 1fr 1fr; // Automatically create two columns
 }
 
+.flex-cols {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem; // Apply a gap of 2rem between each element
+}
+
+.flex-cols .block {
+  width: calc(50% - 2rem);
+  flex: auto;
+}
+
+
 // endregion
 
 // region Block classes
@@ -126,6 +138,8 @@ a {
 }
 
 .block__buttons {
+  justify-self: baseline;
+
   display: flex;
   flex-flow: row wrap;
   gap: 1rem;
@@ -157,6 +171,30 @@ a {
   }
 }
 
+.block__button--icon {
+  display: flex;
+  flex-flow: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.block__button__icon {
+  width: 32px;
+}
+
+.block__tags {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.block__tag {
+  font-size: 0.9rem;
+  color: #666;
+}
+
 /*
   Styling attribute for block class which allows the
   block to span across two rows rather than just one
@@ -184,6 +222,14 @@ a {
 
   .block--col-2-span {
     grid-column: 1; // Revert the spanning column to just one column
+  }
+
+  .flex-cols {
+    flex-flow: column;
+  }
+
+  .flex-cols .block {
+    width: 100%;
   }
 
 }

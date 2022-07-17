@@ -1,6 +1,10 @@
-import { FunctionComponent, useEffect, useRef, useState } from "react";
+import { FunctionComponent, ReactNode, useEffect, useRef, useState } from "react";
 
-const Navigation: FunctionComponent = () => {
+interface NavigationProperties {
+    children: ReactNode[]
+}
+
+const Navigation: FunctionComponent<NavigationProperties> = ({children}) => {
     const [floating, setFloating] = useState(false); // State determining if the nav should float
     const navRef = useRef<HTMLElement>(null); // Reference to the nav element
 
@@ -19,10 +23,7 @@ const Navigation: FunctionComponent = () => {
 
     return (
         <nav className={`nav ${floating ? 'nav--floating' : ''}`} ref={navRef}>
-            <a href="/#about" className="nav__button">About</a>
-            <a href="/#contact" className="nav__button">Contact</a>
-            <a href="/#technology" className="nav__button">Technology</a>
-            <a href="/projects" className="nav__button">Projects</a>
+            {children}
         </nav>
     )
 }
