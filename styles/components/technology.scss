@@ -11,6 +11,9 @@
 }
 
 .technology__block__image {
+  flex: auto;
+  width: 50%;
+  max-width: 120px;
   justify-self: center;
   align-self: center;
 }

@@ -2,11 +2,11 @@ import { FunctionComponent } from "react";
 import Dots from "../components/Dots";
 import Image from "next/image";
 
-import LangBImage from "../public/img/langb.png"
-import LangFImage from "../public/img/langf.png"
-import EditorsImage from "../public/img/editors.png"
-import FrameBImage from "../public/img/framb.png"
-import FrameFImage from "../public/img/framf.png"
+import LangBImage from "../public/img/langb-small.png"
+import LangFImage from "../public/img/langf-small.png"
+import EditorsImage from "../public/img/editors-small.png"
+import FrameBImage from "../public/img/framb-small.png"
+import FrameFImage from "../public/img/framf-small.png"
 
 const Technology: FunctionComponent = () => (
     <div className="section">
@@ -69,7 +69,7 @@ const Technology: FunctionComponent = () => (
                         projects
                         using it in the past. NuxtJS was the framework which I previously developed my personal
                         website
-                        in among other side projects. I have used NodeJS to make bots as well as other usefull tools
+                        in among other side projects. I have used NodeJS to make bots as well as other useful tools
                         and
                         full on server systems.
                     </p>
