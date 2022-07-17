@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import Typer from "./Typer";
 import Image from "next/image";
-import JacobRead from "public/img/jacobread.png"
+import JacobRead from "../public/img/jacobread.png"
 import Navigation from "./Navigation";
 
 
