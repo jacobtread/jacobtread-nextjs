@@ -154,7 +154,7 @@ const Projects: NextPage = () => {
 
 
                 <Project
-                    title="Dream"
+                    title="Alto"
                     links={[
                         createGitHubLink('AltoClient'),
                         createWebsiteLink('https://alto.jacobtread.com/'),
