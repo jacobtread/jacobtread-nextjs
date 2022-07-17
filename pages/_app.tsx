@@ -27,6 +27,7 @@ function MyApp({Component, pageProps}: AppProps) {
 
                 <title>Jacobtread | Full-stack Developer</title>
             </Head>
+            <span id="top"></span>
             <Component {...pageProps} />
             <Footer/>
         </div>

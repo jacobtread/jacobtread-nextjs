@@ -16,6 +16,7 @@ const Footer: FunctionComponent = () => {
                     <a href="/#contact" className="footer__links__item">Contact</a>
                     <a href="/#technology" className="footer__links__item">Technology</a>
                     <a href="/projects" className="footer__links__item">Projects</a>
+                    <a href="#top" className="footer__links__item">Back to top</a>
                 </div>
             </div>
         </footer>

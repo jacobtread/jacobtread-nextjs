@@ -12,6 +12,7 @@ const Projects: NextPage = () => {
             <h1 className="section__title projects__title">My Projects</h1>
             <Navigation>
                 <a href="/" className="nav__button">Home</a>
+                <a href="#top" className="nav__button">Back to top</a>
                 <a href="https://github.com/jacobtread" rel="noreferrer noopener" className="nav__button">GitHub</a>
             </Navigation>
             <Dots/>
