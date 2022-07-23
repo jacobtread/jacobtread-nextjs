@@ -28,6 +28,22 @@ const Projects: NextPage = () => {
                     logging the packets.
                 </Project>
 
+                <Project
+                    title="BlazeKt"
+                    links={[createGitHubLink('jacobtread/BlazeKt')]}
+                    tags={['Kotlin', 'Gradle', 'Maven', 'Annotation Processing', 'Library', 'Packet System', 'Netty']}>
+                    BlazeKt is a library which implements the packet system used by Blaze servers which
+                    is the server software that EA uses for games such as Mass Effect and Battlefield
+                </Project>
+
+                <Project
+                    title="Kotlin XML Builder"
+                    links={[createGitHubLink('jacobtread/xml-builder-kt')]}
+                    tags={['Kotlin', 'Gradle', 'Maven', 'XML', 'Library']}>
+                    A library which creates a DSL like builder for creating XML through kotlin code
+                    this is used in other projects to create xml objects at runtime. This project has
+                    been optimized quite a bit from its original version.
+                </Project>
 
                 <Project
                     icon={QRLIcon}
