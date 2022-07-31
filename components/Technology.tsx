@@ -22,7 +22,7 @@ const Technology: FunctionComponent = () => (
                     <h2 className="block__title">Backend Languages</h2>
                     <p className="block__text">
                         I am very familiar with languages such as Java and Kotlin having roughly 5 years experience
-                        programming with Java and around 1 and a half years with kotlin. I’ve recently been getting into
+                        programming with Java and around 1 and a half years with Kotlin. I’ve recently been getting into
                         the mix of Rust and Go which have been a pleasure to use. I also have 2 years experience in PHP.
                     </p>
                 </div>
