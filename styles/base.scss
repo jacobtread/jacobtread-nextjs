@@ -2,12 +2,14 @@
 @import "tools";
 
 html, body {
+  // Applying the os font family
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   scroll-behavior: smooth; // Enables smooth scrolling to elements
 }
 
 body {
+  // Setting the root background colour
   background: $background;
 }
 
@@ -207,6 +209,7 @@ a {
 
 // endregion
 
+// Hidden top element for returning to top
 .top {
   position: fixed;
   left: 0;

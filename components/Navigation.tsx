@@ -1,10 +1,18 @@
 import { FunctionComponent, ReactNode, useEffect, useRef, useState } from "react";
 
-interface NavigationProperties {
+interface Properties { // Navigation properties
     children: ReactNode[]
 }
 
-const Navigation: FunctionComponent<NavigationProperties> = ({children}) => {
+/**
+ * Navigation Component. This component is the sticky navigation component
+ * this component will stay in its original position until the top of the
+ * screen passes the element then it becomes sticky and attaches to the
+ * top of the screen.
+ *
+ * @param children The child link elements
+ */
+const Navigation: FunctionComponent<Properties> = ({children}) => {
     const [floating, setFloating] = useState(false); // State determining if the nav should float
     const navRef = useRef<HTMLElement>(null); // Reference to the nav element
 

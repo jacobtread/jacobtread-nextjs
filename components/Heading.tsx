@@ -4,7 +4,10 @@ import Image from "next/image";
 import JacobRead from "../public/img/jacobread.png"
 import Navigation from "./Navigation";
 
-
+/**
+ * Heading Component. This is the fullscreen component present on the
+ * Home page it's the first thing the users sees.
+ */
 const Heading: FunctionComponent = () => (
     <div className="heading">
         <div className="heading__content-wrapper">

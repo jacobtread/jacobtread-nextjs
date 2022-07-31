@@ -3,11 +3,9 @@
   flex-flow: row;
   gap: 2rem;
 
-
   &:nth-child(even) {
     flex-flow: row-reverse;
   }
-
 }
 
 .technology__block__image {

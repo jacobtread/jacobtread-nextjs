@@ -1,13 +1,22 @@
-import { FunctionComponent } from "react";
-import Dots from "../components/Dots";
-import Image from "next/image";
+// Types
+import type { FunctionComponent } from "react";
 
+// Components
+import Image from "next/image";
+import Dots from "./Dots";
+
+// Images
 import LangBImage from "../public/img/langb-small.png"
 import LangFImage from "../public/img/langf-small.png"
 import EditorsImage from "../public/img/editors-small.png"
 import FrameBImage from "../public/img/framb-small.png"
 import FrameFImage from "../public/img/framf-small.png"
 
+/**
+ * Technology Block Component. This component contains a list of
+ * technologies / languages / tooling that I use / am comfortable
+ * using in projects.
+ */
 const Technology: FunctionComponent = () => (
     <div className="section">
         <h1 className="section__title">Technology</h1>

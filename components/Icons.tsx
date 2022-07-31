@@ -1,12 +1,22 @@
 import { FunctionComponent } from "react";
 
-interface IconProperties {
+interface Properties { // Icon properties
     className?: string,
 }
 
-export type IconComponent = FunctionComponent<IconProperties>;
+/**
+ * Icon component type extending from function components
+ * providing the className property to all usages
+ */
+export type IconComponent = FunctionComponent<Properties>;
 
-export const GithubIcon: IconComponent = ({className='icon'}) => (
+/**
+ * GitHub Icon Component. This is an SVG inside a component wrapper
+ * so that it can be used through-out the website easily
+ *
+ * @param className The optional css class name for this element (default to icon)
+ */
+export const GithubIcon: IconComponent = ({className = 'icon'}) => (
     <svg xmlns="http://www.w3.org/2000/svg"
          className={className}
          viewBox="0 0 496 512">
@@ -15,8 +25,13 @@ export const GithubIcon: IconComponent = ({className='icon'}) => (
     </svg>
 )
 
-
-export const DiscordIcon: IconComponent = ({className='icon'}) => (
+/**
+ * Discord Icon Component. This is an SVG inside a component wrapper
+ * so that it can be used through-out the website easily
+ *
+ * @param className The optional css class name for this element (default to icon)
+ */
+export const DiscordIcon: IconComponent = ({className = 'icon'}) => (
     <svg viewBox="0 0 71 55" xmlns="http://www.w3.org/2000/svg"
          className={className}>
         <g clipPath="url(#clip0)">
@@ -31,28 +46,41 @@ export const DiscordIcon: IconComponent = ({className='icon'}) => (
     </svg>
 )
 
-export const InstagramIcon: IconComponent = ({className='icon'}) => (
+/**
+ * Instagram Icon Component. This is an SVG inside a component wrapper
+ * so that it can be used through-out the website easily
+ *
+ * @param className The optional css class name for this element (default to icon)
+ */
+export const InstagramIcon: IconComponent = ({className = 'icon'}) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className={className}>
         <path fill="#FFFFFF"
               d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
     </svg>
 )
 
-export const LinkIcon: IconComponent = ({className='icon'}) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" className={className}>
-        <path fill="#FFFFFF"
-              d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"/>
-    </svg>
-)
-
-export const MailIcon: IconComponent = ({className='icon'}) => (
+/**
+ * Mail Icon Component. This is an SVG inside a component wrapper
+ * so that it can be used through-out the website easily
+ *
+ * @param className The optional css class name for this element (default to icon)
+ */
+export const MailIcon: IconComponent = ({className = 'icon'}) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className={className}>
         <path fill="#FFFFFF"
               d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/>
     </svg>
 )
 
-export const PondIcon: IconComponent = ({className='icon'}) => (
+/**
+ * Pond Icon Component. This is an SVG inside a component wrapper
+ * so that it can be used through-out the website easily
+ *
+ * This icon is for Pond
+ *
+ * @param className The optional css class name for this element (default to icon)
+ */
+export const PondIcon: IconComponent = ({className = 'icon'}) => (
     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" className={className}
          viewBox="0 0 216.561 216.561">
         <path fill="#FFFFFF" d="M210.686,65.28v-30h-18.201C186.15,14.867,167.089,0,144.62,0c-27.628,0-50.105,22.477-50.105,50.104
@@ -64,7 +92,15 @@ export const PondIcon: IconComponent = ({className='icon'}) => (
     </svg>
 )
 
-export const QRLIcon: IconComponent = ({className='icon'}) => (
+/**
+ * QRL Icon Component. This is an SVG inside a component wrapper
+ * so that it can be used through-out the website easily
+ *
+ * This icon is for Questionable Research Labs
+ *
+ * @param className The optional css class name for this element (default to icon)
+ */
+export const QRLIcon: IconComponent = ({className = 'icon'}) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 171.75" fill="#FFFFFF" className={className}>
         <path d="M32.5,121.75a7.5,7.5,0,0,0,15,0L55,40.18a15,15,0,0,0-30,0"/>
         <path
@@ -73,7 +109,15 @@ export const QRLIcon: IconComponent = ({className='icon'}) => (
     </svg>
 )
 
-export const QuizlerIcon: IconComponent = ({className='icon'}) => (
+/**
+ * Quizler Icon Component. This is an SVG inside a component wrapper
+ * so that it can be used through-out the website easily
+ *
+ * This icon is for Quizler
+ *
+ * @param className The optional css class name for this element (default to icon)
+ */
+export const QuizlerIcon: IconComponent = ({className = 'icon'}) => (
     <svg xmlns="http://www.w3.org/2000/svg"
          viewBox="0 0 320 512"
          className={className}>
@@ -82,7 +126,15 @@ export const QuizlerIcon: IconComponent = ({className='icon'}) => (
     </svg>
 )
 
-export const StudentIcon: IconComponent = ({className='icon'}) => (
+/**
+ * Student Icon Component. This is an SVG inside a component wrapper
+ * so that it can be used through-out the website easily
+ *
+ * This icon is for school related projects
+ *
+ * @param className The optional css class name for this element (default to icon)
+ */
+export const StudentIcon: IconComponent = ({className = 'icon'}) => (
     <svg xmlns="http://www.w3.org/2000/svg"
          viewBox="0 0 512 512"
          className={className}
@@ -92,7 +144,15 @@ export const StudentIcon: IconComponent = ({className='icon'}) => (
     </svg>
 )
 
-export const TRIcon: IconComponent = ({className='icon'}) => (
+/**
+ * True Random Icon Component. This is an SVG inside a component wrapper
+ * so that it can be used through-out the website easily
+ *
+ * This icon is for True Random
+ *
+ * @param className The optional css class name for this element (default to icon)
+ */
+export const TRIcon: IconComponent = ({className = 'icon'}) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194.75 166.57" fill="#FFFFFF" className={className}>
         <path d="M73.39,42.69v19H49.56v77.2H26.72V61.73h-24v-19Z" transform="translate(-2.75 -6.97)"/>
         <path
@@ -110,7 +170,15 @@ export const TRIcon: IconComponent = ({className='icon'}) => (
     </svg>
 )
 
-export const NZGMIcon: IconComponent = ({className='icon'}) => (
+/**
+ * NZGM Icon Component. This is an SVG inside a component wrapper
+ * so that it can be used through-out the website easily
+ *
+ * This icon is for NZGrapher Modern
+ *
+ * @param className The optional css class name for this element (default to icon)
+ */
+export const NZGMIcon: IconComponent = ({className = 'icon'}) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376.58 189.84" fill="#FFFFFF" className={className}>
         <path d="M209.08,46.74H235l41.83,86.12-1.86,2V46.74h20.26V159.07H269.15L227.48,74.26l1.86-2v86.82H209.08Z"
               transform="translate(-11.71 -10.08)"/>

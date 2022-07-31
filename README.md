@@ -17,6 +17,14 @@ are listed as React Components you can create new ones by using the following
 </Project>
 ```
 
+## Directory Structure
+
+- components (React components)
+- pages (The different pages for the website)
+- public (Public assets for the website)
+- styles (SCSS Styling)
+- out (Output directory)
+
 
 ### Development Server
 

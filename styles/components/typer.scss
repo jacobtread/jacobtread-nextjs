@@ -3,6 +3,7 @@
   margin-right: 4px;
 }
 
+// Display & animate the cursor when typing
 .typer[data-typing=true]::after {
   content: "";
   position: absolute;
@@ -14,6 +15,7 @@
   animation: typer-cursor-blink 1s 1s infinite;
 }
 
+// Blinking cursor animation
 @keyframes typer-cursor-blink {
   0%, 100% {
     opacity: 1;

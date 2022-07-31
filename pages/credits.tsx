@@ -2,7 +2,10 @@ import type { NextPage } from 'next'
 import Dots from "../components/Dots";
 import Navigation from "../components/Navigation";
 
-
+/**
+ * Credits page (/credits) this page contains attributions / credits
+ * for assets used in this website to ensure copyright compliance.
+ */
 const Credits: NextPage = () => {
     return (
         <div className="section">
@@ -12,7 +15,6 @@ const Credits: NextPage = () => {
             </Navigation>
             <Dots/>
             <main className="main section__content ">
-
                 <div className="block">
                     <h2 className="block__title">Flaticon Icons</h2>
                     <p className="block__text">
@@ -37,7 +39,6 @@ const Credits: NextPage = () => {
                     </div>
                 </div>
 
-
                 <div className="block ">
                     <h2 className="block__title">Jetbrains Product Icons</h2>
                     <p className="block__text">
@@ -49,7 +50,6 @@ const Credits: NextPage = () => {
                            rel="noopener noreferrer">Link</a>
                     </div>
                 </div>
-
             </main>
         </div>
     )

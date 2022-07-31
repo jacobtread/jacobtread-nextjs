@@ -1,7 +1,10 @@
-import { FunctionComponent } from "react";
+import type { FunctionComponent } from "react";
 import Dots from "../components/Dots";
 
-
+/**
+ * About Component. This component contains information about me
+ * such as my history, interests and projects
+ */
 const About: FunctionComponent = () => {
     return (
         <div className="section">

@@ -4,18 +4,29 @@ import { NZGMIcon, PondIcon, QRLIcon, QuizlerIcon, StudentIcon, TRIcon } from ".
 import Dots from "../components/Dots";
 import Navigation from "../components/Navigation";
 
-
+/**
+ * Projects page (/projects) this page contains a list of
+ * some of my projects along with a description, tags, links
+ * and icons for each project.
+ *
+ * This page also contains a link to my GitHub and a return
+ * to top button in the navigation.
+ */
 const Projects: NextPage = () => {
     return (
         <div className="section">
             <h1 className="section__title projects__title">My Projects</h1>
             <Navigation>
                 <a href="/" className="nav__button">Home</a>
+                {/* Button for returning to the top of the page */}
                 <a href="#top" className="nav__button">Back to top</a>
+                {/* Link to my GitHub page */}
                 <a href="https://github.com/jacobtread" rel="noreferrer noopener" className="nav__button">GitHub</a>
             </Navigation>
             <Dots/>
             <main className="main section__content flex-cols">
+                {/* Projects starts here */}
+
                 <Project
                     title="KME3"
                     links={[createGitHubLink('jacobtread/KME3')]}
@@ -307,6 +318,8 @@ const Projects: NextPage = () => {
                     tags={['NextJS', 'React', 'Typescript', 'SCSS']}>
                     The website that you are currently viewing. This is hosted on cloudflare pages.
                 </Project>
+
+                {/* Projects ends here*/}
             </main>
         </div>
     )

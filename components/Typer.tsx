@@ -1,6 +1,6 @@
 import { FunctionComponent, useEffect, useState } from "react";
 
-interface TyperProperties {
+interface Properties {
     values: string[]; // The list of values to cycle through
     duration: number; // The duration to display each value
 }
@@ -13,7 +13,7 @@ interface TyperProperties {
  * @param values The string array of values to type out
  * @param duration The duration each value should stay for
  */
-const Typer: FunctionComponent<TyperProperties> = ({values, duration}) => {
+const Typer: FunctionComponent<Properties> = ({values, duration}) => {
     const [value, setValue] = useState(""); // State for the current value
     const [complete, setComplete] = useState(false); // State for whether typing is complete
 

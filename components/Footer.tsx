@@ -1,6 +1,10 @@
 import { FunctionComponent } from "react";
 
-
+/**
+ * Footer Component. This is the component present at the bottom of each
+ * page. This component contains the copyright information as well as links
+ * to all the pages in this website and sections.
+ */
 const Footer: FunctionComponent = () => {
     const currentDate: Date = new Date();
     const currentYear: number = currentDate.getFullYear()
