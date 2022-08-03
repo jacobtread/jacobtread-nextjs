@@ -22,7 +22,9 @@ are listed as React Components you can create new ones by using the following
 - components (React components)
 - pages (The different pages for the website)
 - public (Public assets for the website)
+  - img (Images for the website)
 - styles (SCSS Styling)
+  - components (Component Specific styling)
 - out (Output directory)
 
 

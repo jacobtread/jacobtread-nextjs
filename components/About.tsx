@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react";
-import Dots from "../components/Dots";
+import Dots from "./Dots";
 
 /**
  * About Component. This component contains information about me
@@ -16,7 +16,7 @@ const About: FunctionComponent = () => {
                         History
                     </h2>
                     <p className="block__text">
-                        New Zealand is where I was born and so far I’ve spent my entire life here. From the ripe young
+                        I was born in New Zealand and i’ve spent my entire life here. From the
                         age of 11, I’ve always had a great interest in programming and have spent a majority of my time
                         learning and building up my skills with different programming languages, frameworks, and
                         toolsets. My earliest programming adventures came about from the early days of Minecraft

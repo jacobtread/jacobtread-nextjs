@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import { GithubIcon, IconComponent } from "../components/Icons";
+import { GithubIcon, IconComponent } from "./Icons";
 
 
 interface Link { // Link typing
