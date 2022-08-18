@@ -28,8 +28,8 @@ const Projects: NextPage = () => {
                 {/* Projects starts here */}
 
                 <Project
-                    title="KME3"
-                    links={[createGitHubLink('jacobtread/KME3')]}
+                    title="Pocket Relay"
+                    links={[createGitHubLink('jacobtread/PocketRelay')]}
                     tags={['Kotlin', 'Mass Effect 3', 'Game Server', 'Netty', 'Docker']}>
                     Custom dedicated Mass Effect 3 game server software which emulates the functionality of the
                     official EA servers with the added benefit of allowing &quot;Home Hosting&quot; / LAN play.
@@ -44,7 +44,8 @@ const Projects: NextPage = () => {
                     links={[createGitHubLink('jacobtread/BlazeKt')]}
                     tags={['Kotlin', 'Gradle', 'Maven', 'Annotation Processing', 'Library', 'Packet System', 'Netty']}>
                     BlazeKt is a library which implements the packet system used by Blaze servers which
-                    is the server software that EA uses for games such as Mass Effect and Battlefield.
+                    is the server software that EA uses for games such as Mass Effect and Battlefield. The library
+                    also has an annotation processor for generating packet routing based on annotation functions
                 </Project>
 
 
