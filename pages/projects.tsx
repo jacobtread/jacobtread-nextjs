@@ -45,7 +45,18 @@ const Projects: NextPage = () => {
                     tags={['Kotlin', 'Gradle', 'Maven', 'Annotation Processing', 'Library', 'Packet System', 'Netty']}>
                     BlazeKt is a library which implements the packet system used by Blaze servers which
                     is the server software that EA uses for games such as Mass Effect and Battlefield. The library
-                    also has an annotation processor for generating packet routing based on annotation functions
+                    also has an annotation processor for generating packet routing based on annotation functions.
+                </Project>
+
+
+                <Project
+                    title="Drive-PI"
+                    links={[createGitHubLink('jacobtread/Drive-PI')]}
+                    tags={['Rust', 'React', 'SASS', 'Raspberry PI', 'HTTP', 'Typescript']}>
+                    Drive-PI is an application I wrote for a school assessment. Drive-PI acts as a network file share running
+                    on a Raspberry PI. Drive-PI will share the connected drives over its wireless Hotspot along with providing
+                    a management web interface to unmount, mount and remount drives. The backend is written in rust and its
+                    frontend is written in Typescript using ReactJS.
                 </Project>
 
 
