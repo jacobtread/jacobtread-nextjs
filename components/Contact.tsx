@@ -45,27 +45,29 @@ const Contact: FunctionComponent = () => {
         },
     ]
     return (
-        <div className="section">
+        <section className="section">
             <h1 className="section__title">Getting in touch</h1>
             <Dots/>
-            <div id="contact" className="section__content section__content--col-2">
-                {links.map(({Icon, title, link, text}, index) => (
-                    <a key={index}
-                       href={link}
-                       rel="noreferrer noopener"
-                       target="_blank"
-                       className="block contact-button"
-                    >
-                        <Icon className="contact-button__icon icon"/>
-                        <div>
-                            <h2 className="block__title">{title}</h2>
-                            <h2 className="block__text">{text}</h2>
-                        </div>
-                    </a>
-                ))}
-            </div>
+            <address className="contact-wrapper">
+                <div id="contact" className="section__content section__content--col-2">
+                    {links.map(({Icon, title, link, text}, index) => (
+                        <a key={index}
+                           href={link}
+                           rel="noreferrer noopener"
+                           target="_blank"
+                           className="block contact-button"
+                        >
+                            <Icon className="contact-button__icon icon"/>
+                            <div>
+                                <h2 className="block__title">{title}</h2>
+                                <h2 className="block__text">{text}</h2>
+                            </div>
+                        </a>
+                    ))}
+                </div>
+            </address>
             <Dots/>
-        </div>
+        </section>
     )
 }
 

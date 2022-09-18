@@ -18,12 +18,12 @@ import FrameFImage from "../public/img/framf-small.png"
  * using in projects.
  */
 const Technology: FunctionComponent = () => (
-    <div className="section">
+    <section className="section">
         <h1 className="section__title">Technology</h1>
         <Dots/>
         <div className="section__content technology" id="technology">
 
-            <div className="block technology__block">
+            <article className="block technology__block">
                 <div className="technology__block__image">
                     <Image src={LangBImage} alt="Backend Languages"/>
                 </div>
@@ -35,10 +35,10 @@ const Technology: FunctionComponent = () => (
                         the mix of Rust and Go which have been a pleasure to use. I also have 2 years experience in PHP.
                     </p>
                 </div>
-            </div>
+            </article>
 
 
-            <div className="block technology__block">
+            <article className="block technology__block">
                 <div className="technology__block__image">
                     <Image src={LangFImage} alt="Frontend Languages"/>
                 </div>
@@ -50,9 +50,9 @@ const Technology: FunctionComponent = () => (
                         of my projects.
                     </p>
                 </div>
-            </div>
+            </article>
 
-            <div className="block technology__block">
+            <article className="block technology__block">
                 <div className="technology__block__image">
                     <Image src={EditorsImage} alt="Editors"/>
                 </div>
@@ -64,10 +64,10 @@ const Technology: FunctionComponent = () => (
                         every day text editing and some smaller projects I like to use VSCode.
                     </p>
                 </div>
-            </div>
+            </article>
 
 
-            <div className="block technology__block">
+            <article className="block technology__block">
                 <div className="technology__block__image">
                     <Image src={FrameBImage} alt="Backend Frameworks"/>
                 </div>
@@ -83,10 +83,10 @@ const Technology: FunctionComponent = () => (
                         full on server systems.
                     </p>
                 </div>
-            </div>
+            </article>
 
 
-            <div className="block technology__block">
+            <article className="block technology__block">
                 <div className="technology__block__image">
                     <Image src={FrameFImage} alt="Frontend Frameworks"/>
                 </div>
@@ -98,9 +98,9 @@ const Technology: FunctionComponent = () => (
                         rely on the most.
                     </p>
                 </div>
-            </div>
+            </article>
         </div>
-    </div>
+    </section>
 )
 
 

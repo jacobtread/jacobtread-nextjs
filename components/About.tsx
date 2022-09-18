@@ -7,11 +7,11 @@ import Dots from "./Dots";
  */
 const About: FunctionComponent = () => {
     return (
-        <div className="section">
+        <section className="section">
             <h1 className="section__title">Getting to know me</h1>
             <Dots/>
             <div className="section__content section__content--col-2" id="about">
-                <div className="block" data-block="history">
+                <article className="block" data-block="history">
                     <h2 className="block__title">
                         History
                     </h2>
@@ -22,8 +22,8 @@ const About: FunctionComponent = () => {
                         toolsets. My earliest programming adventures came about from the early days of Minecraft
                         modding.
                     </p>
-                </div>
-                <div className="block" data-block="interests">
+                </article>
+                <article className="block" data-block="interests">
                     <h2 className="block__title">
                         Interests
                     </h2>
@@ -33,8 +33,8 @@ const About: FunctionComponent = () => {
                         code through reverse engineering and other collaboration. Outside of programming I am also
                         interested in body building and I like to keep a strict routine with my exercise.
                     </p>
-                </div>
-                <div className="block block--col-2-span" data-block="projects">
+                </article>
+                <article className="block block--col-2-span" data-block="projects">
                     <h2 className="block__title">
                         Projects
                     </h2>
@@ -57,10 +57,10 @@ const About: FunctionComponent = () => {
                             View GitHub
                         </a>
                     </div>
-                </div>
+                </article>
             </div>
             <Dots/>
-        </div>
+        </section>
     )
 }
 

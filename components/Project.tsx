@@ -56,7 +56,7 @@ export function createWebsiteLink(url: string, text: string = 'View Website'): L
  */
 export const Project: FunctionComponent<Properties> = ({icon: Icon, title, children, links, tags}) => {
     return (
-        <div className="block project">
+        <article className="block project">
             <div>
                 <div className="project__head">
                     <h2 className="block__title project__title">{title}</h2>
@@ -89,6 +89,6 @@ export const Project: FunctionComponent<Properties> = ({icon: Icon, title, child
                     }
                 </div>
             </div>
-        </div>
+        </article>
     )
 }

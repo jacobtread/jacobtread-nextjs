@@ -34,7 +34,7 @@ function MyApp({Component, pageProps}: AppProps) {
                 <meta name="author" content="Jacobtread"/>
                 <meta name="description" content={description}/>
                 <meta name="keywords" content="developer,jacobtread,jacob,programming,software,fullstack,web"/>
-                <meta name="theme-color" color="#7ed380"/>
+                <meta name="theme-color" content="#7ed380"/>
 
                 {/* Page Title */}
                 <title>Jacobtread | Full-stack Developer</title>
