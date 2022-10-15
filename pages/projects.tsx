@@ -29,7 +29,7 @@ const Projects: NextPage = () => {
 
                 <Project
                     title="Pocket Relay"
-                    links={[createGitHubLink('jacobtread/PocketRelay')]}
+                    links={[createGitHubLink('PocketRelay/ServerKotlin')]}
                     tags={['Kotlin', 'Mass Effect 3', 'Game Server', 'Netty', 'Docker']}>
                     Custom dedicated Mass Effect 3 game server software which emulates the functionality of the
                     official EA servers with the added benefit of allowing &quot;Home Hosting&quot; / LAN play.
@@ -38,6 +38,27 @@ const Projects: NextPage = () => {
                     the official servers which decoding all the packets in-between.
                 </Project>
 
+                <Project
+                    title="Blaze SSL"
+                    links={[createGitHubLink('jacobtread/blaze-ssl')]}
+                    tags={['Rust', 'Mass Effect 3', 'SSLv3']}>
+                    Implementation of the SSLv3 protocol in rust to support the game clients for Mass Effect 3
+                    which are only able to use SSLv3 due to its hardcoded implementation so in order to make
+                    it possible for the Rust rewrite of PocketRelay and to introduce the new client app I
+                    decided to implement the SSLv3 protocol myself as there aren&apos;t any other libraries that
+                    support it without modifying key parts of the system such as doing registry edits
+                </Project>
+
+                <Project
+                    title="Pocket Relay (Rust Rewrite)"
+                    links={[createGitHubLink('PocketRelay/ServerRust')]}
+                    tags={['Rust', 'Mass Effect 3', 'Game Server', 'Docker']}>
+                    I have started completely rewriting my Pocket Relay game server in Rust with a new architecture
+                    which moves the Redirect portion of the server into a small Rust client application which in
+                    when fully implemented will proxy the remainder of the game traffic to the server. This rewrite
+                    greatly improves performance of the server and removes the requirement of having a JVM making it
+                    portable and easier to use.
+                </Project>
 
                 <Project
                     title="BlazeKt"
@@ -48,6 +69,25 @@ const Projects: NextPage = () => {
                     also has an annotation processor for generating packet routing based on annotation functions.
                 </Project>
 
+                <Project
+                    title="BlazePK"
+                    links={[createGitHubLink('jacobtread/BlazePK-rs')]}
+                    tags={['Rust', 'Library', 'Packet System', 'Async']}>
+                    BlazePK is an implementation of the Blaze packet system used by EA games such as Mass Effect 3 and
+                    Battlefield. This implementation is written in Rust and uses macros for wrapping structs and allowing
+                    packets to be encoded and decoded from them. This library features both async and sync reading and writing
+                    of packets.
+                </Project>
+
+                <Project
+                    title="Jarpo"
+                    links={[createGitHubLink('jacobtread/Jarpo')]}
+                    tags={['Rust', 'React', 'SASS', 'HTTP', 'Typescript']}>
+                    This is a work-in progress web application which is intended to be an easily accessible public repository
+                    for compiled Minecraft server Jar files. Although this is in very early stages whats currently being
+                    implemented is a clone of the Spigot Build Tools in Rust as part of the backend to compile spigot Jars
+                    fast and asynchronously
+                </Project>
 
                 <Project
                     title="Drive-PI"
@@ -58,7 +98,6 @@ const Projects: NextPage = () => {
                     a management web interface to unmount, mount and remount drives. The backend is written in rust and its
                     frontend is written in Typescript using ReactJS.
                 </Project>
-
 
                 <Project
                     title="Kotlin XML Builder"
@@ -288,6 +327,13 @@ const Projects: NextPage = () => {
                     for &quot;Web Design 2.4 AS91893&quot;.
                 </Project>
 
+                <Project
+                    title="TinyServe"
+                    links={[createGitHubLink('jacobtread/TinyServe')]}
+                    tags={['Rust', 'HTTP', 'Server']}>
+                    This is a tiny portable Rust application which has only one purpose and that is to create an
+                    HTTP server that shares all the files placed in the &quot;public&quot; folder next to it
+                </Project>
 
                 <Project
                     title="InstaViewer"
@@ -297,15 +343,13 @@ const Projects: NextPage = () => {
                     message.
                 </Project>
 
-
                 <Project
                     title="Spew"
                     links={[createGitHubLink('jacobtread/spew')]}
                     tags={['Rust', 'Language']}>
                     A very early stages custom language the linked repository is the parser which is written in rust.
                 </Project>
-
-
+                
                 <Project
                     title="jacobtread.github.io"
                     links={[
