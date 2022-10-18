@@ -349,7 +349,7 @@ const Projects: NextPage = () => {
                     tags={['Rust', 'Language']}>
                     A very early stages custom language the linked repository is the parser which is written in rust.
                 </Project>
-                
+
                 <Project
                     title="jacobtread.github.io"
                     links={[
