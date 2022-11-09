@@ -53,11 +53,11 @@ const Projects: NextPage = () => {
                     title="Pocket Relay (Rust Rewrite)"
                     links={[createGitHubLink('PocketRelay/ServerRust')]}
                     tags={['Rust', 'Mass Effect 3', 'Game Server', 'Docker']}>
-                    I have started completely rewriting my Pocket Relay game server in Rust with a new architecture
-                    which moves the Redirect portion of the server into a small Rust client application which in
-                    when fully implemented will proxy the remainder of the game traffic to the server. This rewrite
-                    greatly improves performance of the server and removes the requirement of having a JVM making it
-                    portable and easier to use.
+                    I have started completely rewriting my Pocket Relay game server in Rust which early on
+                    showed off great performance improvements along with many benifits over the original Kotlin
+                    version. So far I've seen a massive memory usage decrease going from 160mb idle on the Kotlin
+                    server to only 5mb with two players on the Rust server. This Rust rewrite also removes the
+                    requirement of needing a JVM which greatly improves its easy of use and user experience.
                 </Project>
 
                 <Project

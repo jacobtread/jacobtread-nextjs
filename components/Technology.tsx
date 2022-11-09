@@ -20,19 +20,20 @@ import FrameFImage from "../public/img/framf-small.png"
 const Technology: FunctionComponent = () => (
     <section className="section">
         <h1 className="section__title">Technology</h1>
-        <Dots/>
+        <Dots />
         <div className="section__content technology" id="technology">
 
             <article className="block technology__block">
                 <div className="technology__block__image">
-                    <Image src={LangBImage} alt="Backend Languages"/>
+                    <Image src={LangBImage} alt="Backend Languages" />
                 </div>
                 <div>
                     <h2 className="block__title">Backend Languages</h2>
                     <p className="block__text">
-                        I am very familiar with languages such as Java and Kotlin having roughly 5 years experience
-                        programming with Java and around 1 and a half years with Kotlin. I’ve recently been getting into
-                        the mix of Rust and Go which have been a pleasure to use. I also have 2 years experience in PHP.
+                        I am very familiar with languages such as Java and Kotlin having roughly 5 years
+                        experience programming with Java, close too 2 years with Kotlin, and 3 years with PHP.
+                        For a larger part of this year I've been making  great use of the Rust language and have
+                        really been enjoying it.
                     </p>
                 </div>
             </article>
@@ -40,13 +41,13 @@ const Technology: FunctionComponent = () => (
 
             <article className="block technology__block">
                 <div className="technology__block__image">
-                    <Image src={LangFImage} alt="Frontend Languages"/>
+                    <Image src={LangFImage} alt="Frontend Languages" />
                 </div>
                 <div>
                     <h2 className="block__title">Frontend Languages</h2>
                     <p className="block__text">
                         I am very well accustomed to popular frontend languages like Javascript and Typescript with
-                        around 4 years experienced in them both added up. I have been using them a lot throughout many
+                        around 5 years experienced in them both added up. I have been using them a lot throughout many
                         of my projects.
                     </p>
                 </div>
@@ -54,7 +55,7 @@ const Technology: FunctionComponent = () => (
 
             <article className="block technology__block">
                 <div className="technology__block__image">
-                    <Image src={EditorsImage} alt="Editors"/>
+                    <Image src={EditorsImage} alt="Editors" />
                 </div>
                 <div>
                     <h2 className="block__title">IDE & Editors</h2>
@@ -69,18 +70,15 @@ const Technology: FunctionComponent = () => (
 
             <article className="block technology__block">
                 <div className="technology__block__image">
-                    <Image src={FrameBImage} alt="Backend Frameworks"/>
+                    <Image src={FrameBImage} alt="Backend Frameworks" />
                 </div>
                 <div>
                     <h2 className="block__title">Backend Frameworks & Tooling</h2>
                     <p className="block__text">
                         I am very familiar with the Laravel php framework having shipped multiple production
-                        projects
-                        using it in the past. NuxtJS was the framework which I previously developed my personal
-                        website
-                        in among other side projects. I have used NodeJS to make bots as well as other useful tools
-                        and
-                        full on server systems.
+                        projects using it in the past. NuxtJS was the framework which I previously developed my personal
+                        website in among other side projects. I have used NodeJS to make bots as well as other useful tools
+                        and full on server systems. This current iteration of my website makes use of the NextJS React framework
                     </p>
                 </div>
             </article>
@@ -88,14 +86,14 @@ const Technology: FunctionComponent = () => (
 
             <article className="block technology__block">
                 <div className="technology__block__image">
-                    <Image src={FrameFImage} alt="Frontend Frameworks"/>
+                    <Image src={FrameFImage} alt="Frontend Frameworks" />
                 </div>
                 <div>
                     <h2 className="block__title">Frontend Frameworks & Tooling</h2>
                     <p className="block__text">
                         I am quite familiar with a number of front-end frameworks my favorite of which is VueJS. I have
                         a few other assorted frameworks mixed in throughout my project but VueJS tends to be the one I
-                        rely on the most.
+                        rely on the most. However recently I've been using React more often.
                     </p>
                 </div>
             </article>
