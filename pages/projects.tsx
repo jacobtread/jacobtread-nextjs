@@ -28,15 +28,16 @@ const Projects: NextPage = () => {
                 {/* Projects starts here */}
 
                 <Project
-                    title="Pocket Relay"
-                    links={[createGitHubLink('PocketRelay/ServerKotlin')]}
-                    tags={['Kotlin', 'Mass Effect 3', 'Game Server', 'Netty', 'Docker']}>
-                    Custom dedicated Mass Effect 3 game server software which emulates the functionality of the
-                    official EA servers with the added benefit of allowing &quot;Home Hosting&quot; / LAN play.
-                    Because the server is hosted by outside of EA servers you can alter your player data. This
-                    server also includes a MITM (Man-in-the-middle) mode which creates a tunnel for connecting to
-                    the official servers which decoding all the packets in-between.
+                    title="Pocket Relay (Rust Rewrite)"
+                    links={[createGitHubLink('PocketRelay/ServerRust')]}
+                    tags={['Rust', 'Mass Effect 3', 'Game Server', 'Docker']}>
+                    I have started completely rewriting my Pocket Relay game server in Rust which early on
+                    showed off great performance improvements along with many benifits over the original Kotlin
+                    version. So far I&apos;ve seen a massive memory usage decrease going from 160mb idle on the Kotlin
+                    server to only 5mb with two players on the Rust server. This Rust rewrite also removes the
+                    requirement of needing a JVM which greatly improves its easy of use and user experience.
                 </Project>
+
 
                 <Project
                     title="Blaze SSL"
@@ -49,15 +50,16 @@ const Projects: NextPage = () => {
                     support it without modifying key parts of the system such as doing registry edits
                 </Project>
 
+
                 <Project
-                    title="Pocket Relay (Rust Rewrite)"
-                    links={[createGitHubLink('PocketRelay/ServerRust')]}
-                    tags={['Rust', 'Mass Effect 3', 'Game Server', 'Docker']}>
-                    I have started completely rewriting my Pocket Relay game server in Rust which early on
-                    showed off great performance improvements along with many benifits over the original Kotlin
-                    version. So far I've seen a massive memory usage decrease going from 160mb idle on the Kotlin
-                    server to only 5mb with two players on the Rust server. This Rust rewrite also removes the
-                    requirement of needing a JVM which greatly improves its easy of use and user experience.
+                    title="Pocket Relay (Kotlin)"
+                    links={[createGitHubLink('PocketRelay/ServerKotlin')]}
+                    tags={['Kotlin', 'Mass Effect 3', 'Game Server', 'Netty', 'Docker']}>
+                    Custom dedicated Mass Effect 3 game server software which emulates the functionality of the
+                    official EA servers with the added benefit of allowing &quot;Home Hosting&quot; / LAN play.
+                    Because the server is hosted by outside of EA servers you can alter your player data. This
+                    server also includes a MITM (Man-in-the-middle) mode which creates a tunnel for connecting to
+                    the official servers which decoding all the packets in-between.
                 </Project>
 
                 <Project

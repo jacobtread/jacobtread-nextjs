@@ -32,7 +32,7 @@ const Technology: FunctionComponent = () => (
                     <p className="block__text">
                         I am very familiar with languages such as Java and Kotlin having roughly 5 years
                         experience programming with Java, close too 2 years with Kotlin, and 3 years with PHP.
-                        For a larger part of this year I've been making  great use of the Rust language and have
+                        For a larger part of this year I&apos;ve been making  great use of the Rust language and have
                         really been enjoying it.
                     </p>
                 </div>
@@ -93,7 +93,7 @@ const Technology: FunctionComponent = () => (
                     <p className="block__text">
                         I am quite familiar with a number of front-end frameworks my favorite of which is VueJS. I have
                         a few other assorted frameworks mixed in throughout my project but VueJS tends to be the one I
-                        rely on the most. However recently I've been using React more often.
+                        rely on the most. However recently I&apos;ve been using React more often.
                     </p>
                 </div>
             </article>
