@@ -23,7 +23,7 @@ const Projects: NextPage = () => {
                 {/* Link to my GitHub page */}
                 <a href="https://github.com/jacobtread" rel="noreferrer noopener" className="nav__button">GitHub</a>
             </Navigation>
-            <Dots/>
+            <Dots />
             <main className="main section__content flex-cols">
                 {/* Projects starts here */}
 
@@ -34,16 +34,28 @@ const Projects: NextPage = () => {
                     I have started completely rewriting my Pocket Relay game server in Rust which early on
                     showed off great performance improvements along with many benifits over the original Kotlin
                     version. So far I&apos;ve seen a massive memory usage decrease going from 160mb idle on the Kotlin
-                    server to only 5mb with two players on the Rust server. This Rust rewrite also removes the
-                    requirement of needing a JVM which greatly improves its easy of use and user experience.
+                    server to only 3.5mb with two players on the Rust server. This Rust rewrite also removes the
+                    requirement of needing a JVM which greatly improves its easy of use and user experience. This version
+                    also makes use of my BlazeSSL project which makes it more stable and not depend on operating system
+                    SSL implementations for its legacy connections.
                 </Project>
 
+                <Project
+                    title="Blaze SSL Async"
+                    links={[createGitHubLink('jacobtread/blaze-ssl-async')]}
+                    tags={['Rust', 'Mass Effect 3', 'SSLv3', 'Async', 'Tokio']}>
+                    This is the asyncronous implementation of the SSLv3 protocol in Rust to support the game clients for Mass Effect 3
+                    which are only able to use SSLv3 due to its hardcoded implementation so in order to make
+                    it possible for the Rust rewrite of PocketRelay and to introduce the new client app I
+                    decided to implement the SSLv3 protocol myself as there aren&apos;t any other libraries that
+                    support it without modifying key parts of the system such as doing registry edits
+                </Project>
 
                 <Project
                     title="Blaze SSL"
                     links={[createGitHubLink('jacobtread/blaze-ssl')]}
                     tags={['Rust', 'Mass Effect 3', 'SSLv3']}>
-                    Implementation of the SSLv3 protocol in rust to support the game clients for Mass Effect 3
+                    Implementation of the SSLv3 protocol in Rust to support the game clients for Mass Effect 3
                     which are only able to use SSLv3 due to its hardcoded implementation so in order to make
                     it possible for the Rust rewrite of PocketRelay and to introduce the new client app I
                     decided to implement the SSLv3 protocol myself as there aren&apos;t any other libraries that
