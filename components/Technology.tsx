@@ -31,9 +31,10 @@ const Technology: FunctionComponent = () => (
                     <h2 className="block__title">Backend Languages</h2>
                     <p className="block__text">
                         I am very familiar with languages such as Java and Kotlin having roughly 5 years
-                        experience programming with Java, close too 2 years with Kotlin, and 3 years with PHP.
-                        For a larger part of this year I&apos;ve been making  great use of the Rust language and have
-                        really been enjoying it.
+                        experience programming with Java, 2 years with Kotlin, and 3 years with PHP.
+                        Since march of last year I have been making great strides with and am now able
+                        to comfortably use the Rust programming language and expect to use it quite often
+                        in future projects.
                     </p>
                 </div>
             </article>
@@ -60,9 +61,11 @@ const Technology: FunctionComponent = () => (
                 <div>
                     <h2 className="block__title">IDE & Editors</h2>
                     <p className="block__text">
-                        When it comes to IDE’s my platform of choice is the JetBrains collection of IDE’s i’ve grown
-                        accustom to them and I am very comfortable using them and navigating them with ease. For common
-                        every day text editing and some smaller projects I like to use VSCode.
+                        Previously I would have preferred to develop my applications using the JetBrains collections of IDE&apos;s
+                        however I've since grown away from these as my usage of the Rust language has increased and have since started
+                        preferring to use VSCode for most projects. However for writing code in Java and Kotlin I will use JetBrains
+                        IDE&apos;s still as they are a well designed tool for the right job. I have also been experimenting with modal
+                        text editors such as NeoVim and Helix in my off time.
                     </p>
                 </div>
             </article>
@@ -78,7 +81,8 @@ const Technology: FunctionComponent = () => (
                         I am very familiar with the Laravel php framework having shipped multiple production
                         projects using it in the past. NuxtJS was the framework which I previously developed my personal
                         website in among other side projects. I have used NodeJS to make bots as well as other useful tools
-                        and full on server systems. This current iteration of my website makes use of the NextJS React framework
+                        and full on server systems. This current iteration of my website makes use of the NextJS React framework.
+                        Recently I have come to use the Actix and Axum web frameworks while developing my Rust applications
                     </p>
                 </div>
             </article>
