@@ -62,7 +62,7 @@ const Technology: FunctionComponent = () => (
                     <h2 className="block__title">IDE & Editors</h2>
                     <p className="block__text">
                         Previously I would have preferred to develop my applications using the JetBrains collections of IDE&apos;s
-                        however I've since grown away from these as my usage of the Rust language has increased and have since started
+                        however I&apos;ve since grown away from these as my usage of the Rust language has increased and have since started
                         preferring to use VSCode for most projects. However for writing code in Java and Kotlin I will use JetBrains
                         IDE&apos;s still as they are a well designed tool for the right job. I have also been experimenting with modal
                         text editors such as NeoVim and Helix in my off time.
