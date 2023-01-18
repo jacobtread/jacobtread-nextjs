@@ -16,7 +16,7 @@ const About: FunctionComponent = () => {
                         History
                     </h2>
                     <p className="block__text">
-                        I was born in New Zealand and have spent my entire life there. I’ve always had a great interest in programming.
+                        I was born in New Zealand and have spent my entire life there. I&apos;ve always had a great interest in programming.
                         Since the age of 11 and have spent the majority of my time learning and building up my skills with different
                         programming languages, frameworks, and toolsets. My earliest programming adventures came about in my days of
                         Minecraft modding which was what inspired me to become a programmer by encouraging me to learn the Java
@@ -40,7 +40,7 @@ const About: FunctionComponent = () => {
                         Projects
                     </h2>
                     <p className="block__text">
-                        I’ve worked on many projects throughout the years, many of which are readily available on my
+                        I&apos;ve worked on many projects throughout the years, many of which are readily available on my
                         Github. The majority of my GitHub projects are licenced under the MIT license. My projects come in
                         all kinds of varieties in all different kinds of languages and frameworks. Feel free to take a
                         Take a look around and see if any of them pique your interest.
