@@ -45,6 +45,12 @@
   z-index: 10;
   animation: nav-floating 0.5s 0s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: $background-light;
+  }
+
   .nav__button {
     border-radius: 0;
 
@@ -82,6 +88,14 @@
   transform: scale(1);
 }
 
+.nav .nav__button--top {
+  display: none;
+}
+
+.nav--floating .nav__button--top {
+  display: initial;
+}
+
 .nav__button:hover {
   opacity: 1;
   background-color: $primary-dark;
@@ -104,6 +118,7 @@
     gap: 1rem;
     z-index: initial;
     flex-flow: row wrap;
+    animation: none;
   }
 
 }

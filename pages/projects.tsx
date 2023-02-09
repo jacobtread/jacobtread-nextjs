@@ -19,7 +19,7 @@ const Projects: NextPage = () => {
             <Navigation>
                 <a href="/" className="nav__button">Home</a>
                 {/* Button for returning to the top of the page */}
-                <a href="#top" className="nav__button">Back to top</a>
+                <a href="#top" className="nav__button nav__button--top">Back to top</a>
                 {/* Link to my GitHub page */}
                 <a href="https://github.com/jacobtread" rel="noreferrer noopener" className="nav__button">GitHub</a>
             </Navigation>
