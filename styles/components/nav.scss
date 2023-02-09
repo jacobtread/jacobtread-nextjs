@@ -6,7 +6,33 @@
   gap: 1rem;
   justify-content: center;
 
+  opacity: 0;
   transition: gap 0.2s ease;
+  animation: nav 0.5s 0s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+}
+
+@keyframes nav {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes nav-floating {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
 }
 
 .nav--floating {
@@ -17,6 +43,7 @@
   transform: translateX(-50%);
   gap: 0;
   z-index: 10;
+  animation: nav-floating 0.5s 0s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 
   .nav__button {
     border-radius: 0;

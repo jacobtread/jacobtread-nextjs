@@ -8,7 +8,7 @@
 .footer-wrapper {
 
   max-width: 1200px;
-  margin: 15vh auto 0;
+  margin: 15vh auto 2rem;
   padding: 2rem 4rem;
   color: white;
   border: 5px dashed darken($background-light, 3);
@@ -25,20 +25,25 @@
 .footer__email {
   color: #999;
   margin-bottom: 0.5rem;
+  display: inline-block;
 }
 
 .footer__copyright {
-  color: #777;
+  color: $primary;
 }
 
 .footer__links {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   display: flex;
   flex-flow: row wrap;
   gap: 1rem;
 }
 
 .footer__links__item {
-  color: #666;
+  color: #949494;
   text-decoration: underline;
+
+  &:hover {
+    color: #FFF;
+  }
 }

@@ -13,7 +13,7 @@ const Footer: FunctionComponent = () => {
         <footer className="footer">
             <div className="footer-wrapper">
                 <h1 className="footer__initials">JR</h1>
-                <p className="footer__email">jacobtread@gmail.com</p>
+                <a className="footer__email" href="mailto:jacobtread@gmail.com">jacobtread@gmail.com</a>
                 <p className="footer__copyright">Copyright &copy; 2020 - {currentYear} Jacob Read</p>
                 <div className="footer__links">
                     <a href="/#about" className="footer__links__item">About</a>
