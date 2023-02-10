@@ -28,7 +28,7 @@ const Projects: NextPage = () => {
                 {/* Projects starts here */}
 
                 <Project
-                    title="Pocket Relay (Rust Rewrite)"
+                    title="Pocket Relay"
                     links={[createGitHubLink('PocketRelay/Server')]}
                     tags={['Rust', 'Mass Effect 3', 'Game Server', 'Docker']}>
                     I have started completely rewriting my Pocket Relay game server in Rust which early on
