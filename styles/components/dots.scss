@@ -7,6 +7,7 @@
   gap: 1rem;
 
   justify-content: center;
+  justify-items: center;
   align-items: center;
 
   width: 12px;
@@ -43,27 +44,36 @@
 }
 
 @keyframes dot-pulse-1 {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0
   }
+
   25% {
     opacity: 1
   }
 }
 
 @keyframes dot-pulse-2 {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0
   }
+
   50% {
     opacity: 1
   }
 }
 
 @keyframes dot-pulse-3 {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0
   }
+
   75% {
     opacity: 1
   }
