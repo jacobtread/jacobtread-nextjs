@@ -30,7 +30,7 @@ const Projects: NextPage = () => {
                 <Project
                     title="Pocket Relay"
                     links={[createGitHubLink('PocketRelay/Server')]}
-                    tags={['Rust', 'Mass Effect 3', 'Game Server', 'Docker']}>
+                    tags={['Rust', 'Axum', 'Mass Effect 3', 'Game Server', 'Docker']}>
                     I have started completely rewriting my Pocket Relay game server in Rust which early on
                     showed off great performance improvements along with many benifits over the original Kotlin
                     version. So far I&apos;ve seen a massive memory usage decrease going from 160mb idle on the Kotlin
