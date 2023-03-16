@@ -29,7 +29,7 @@ const Projects: NextPage = () => {
 
                 <Project
                     title="Pocket Relay"
-                    links={[createGitHubLink('PocketRelay/Server')]}
+                    links={[createGitHubLink('PocketRelay/Server'), createWebsiteLink("https://pocket-relay.pages.dev/", "Website")]}
                     tags={['Rust', 'Axum', 'Mass Effect 3', 'Game Server', 'Docker']}>
                     I have started completely rewriting my Pocket Relay game server in Rust which early on
                     showed off great performance improvements along with many benifits over the original Kotlin
